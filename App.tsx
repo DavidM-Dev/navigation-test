@@ -1,6 +1,6 @@
 import React from "react";
+import { SafeAreaView } from "react-native";
 import AppContainer from "./navigation/AppContainer";
-import { SafeAreaView, Text } from "react-native";
 
 const App = () => (
   <SafeAreaView style={{ flex: 1, backgroundColor: "#ddd" }}>

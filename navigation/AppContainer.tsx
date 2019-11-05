@@ -1,16 +1,18 @@
 import { createAppContainer } from "react-navigation";
 import { createMaterialTopTabNavigator } from "react-navigation-tabs";
-import DetailsScreen from "../screens/DetailsScreen";
-import HomeScreen from "../screens/HomeScreen";
+import CameraScreen from "../screens/CameraScreen";
+import ResultsScreen from "../screens/ResultsScreen";
+import AboutScreen from '../screens/AboutScreen';
 
 export default createAppContainer(
   createMaterialTopTabNavigator(
     {
-      home: HomeScreen,
-      details: DetailsScreen
+      camera: CameraScreen,
+      results: ResultsScreen,
+      about: AboutScreen
     },
     {
-      initialRouteName: "home",
+      initialRouteName: "camera",
       tabBarOptions: {},
       tabBarPosition: "bottom",
       swipeEnabled: true
